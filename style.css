@@ -1,0 +1,97 @@
+/* General Reset and Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Heading Styling */
+h1 {
+    color: #00ff88;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #00ff88;
+    padding-bottom: 10px;
+    animation: fadeInSlide 1s ease-in-out forwards;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: #000; /* Table background inside black */
+    color: #fff;
+    border: 3px solid #00ccff;
+    box-shadow: 0 0 25px 10px rgb(0, 255, 191);
+    animation: fadeInUp 1.2s ease-in-out forwards;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Header */
+thead th {
+    background: rgb(32, 31, 31); /* Green to blue */
+    color: #00fac4f5;
+    font-size: 1.4rem;
+    padding: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+
+/* Table Rows */
+tbody tr {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #111; /* Alternate row black tone */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #1a1a1a;
+}
+
+tbody tr:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.4);
+    background-color: #222;
+}
+
+/* Table Data */
+td {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
